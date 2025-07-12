@@ -14,8 +14,6 @@ import androidx.core.app.NotificationManagerCompat;
 import com.example.walletapplication.MainActivity;
 import com.example.walletapplication.R;
 
-import dagger.hilt.android.qualifiers.ApplicationContext;
-
 /**
  * Manages all backup-related notifications including progress tracking
  */
@@ -39,7 +37,7 @@ public class BackupNotificationManager {
     private final Context context;
     private final NotificationManagerCompat notificationManager;
     
-    public BackupNotificationManager(@ApplicationContext Context context) {
+    public BackupNotificationManager(Context context) {
         this.context = context;
         this.notificationManager = NotificationManagerCompat.from(context);
         createNotificationChannels();

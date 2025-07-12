@@ -207,6 +207,26 @@ public class BackupFragment extends BaseFragment {
      * Starts internal export operation via service
      */
     private void startInternalExport() {
+        // Check notification permission first
+        permissionManager.requestNotificationPermissions(new PermissionUtil.PermissionCallback() {
+            @Override
+            public void onPermissionsGranted() {
+                performInternalExport();
+            }
+            
+            @Override
+            public void onPermissionsDenied(List<String> deniedPermissions) {
+                Log.w(TAG, "Notification permission denied");
+                showMessage("Bildirim izni verilmedi. İşlem devam edecek ancak bildirim gösterilmeyecek.", false);
+                performInternalExport();
+            }
+        });
+    }
+    
+    /**
+     * Performs internal export operation after permission check
+     */
+    private void performInternalExport() {
         if (serviceConnection == null || !serviceConnection.isServiceBound()) {
             showMessage("Servis bağlantısı kurulamadı. Lütfen tekrar deneyin.", true);
             return;
@@ -245,6 +265,26 @@ public class BackupFragment extends BaseFragment {
      * Starts import operation via service
      */
     private void startImportFromUri(Uri uri, boolean replaceExisting) {
+        // Check notification permission first
+        permissionManager.requestNotificationPermissions(new PermissionUtil.PermissionCallback() {
+            @Override
+            public void onPermissionsGranted() {
+                performImportFromUri(uri, replaceExisting);
+            }
+            
+            @Override
+            public void onPermissionsDenied(List<String> deniedPermissions) {
+                Log.w(TAG, "Notification permission denied");
+                showMessage("Bildirim izni verilmedi. İşlem devam edecek ancak bildirim gösterilmeyecek.", false);
+                performImportFromUri(uri, replaceExisting);
+            }
+        });
+    }
+    
+    /**
+     * Performs import operation from URI after permission check
+     */
+    private void performImportFromUri(Uri uri, boolean replaceExisting) {
         if (serviceConnection == null || !serviceConnection.isServiceBound()) {
             showMessage("Servis bağlantısı kurulamadı. Lütfen tekrar deneyin.", true);
             return;
@@ -264,6 +304,26 @@ public class BackupFragment extends BaseFragment {
      * Starts import operation from file path via service
      */
     private void startImportFromFilePath(String filePath, boolean replaceExisting) {
+        // Check notification permission first
+        permissionManager.requestNotificationPermissions(new PermissionUtil.PermissionCallback() {
+            @Override
+            public void onPermissionsGranted() {
+                performImportFromFilePath(filePath, replaceExisting);
+            }
+            
+            @Override
+            public void onPermissionsDenied(List<String> deniedPermissions) {
+                Log.w(TAG, "Notification permission denied");
+                showMessage("Bildirim izni verilmedi. İşlem devam edecek ancak bildirim gösterilmeyecek.", false);
+                performImportFromFilePath(filePath, replaceExisting);
+            }
+        });
+    }
+    
+    /**
+     * Performs import operation from file path after permission check
+     */
+    private void performImportFromFilePath(String filePath, boolean replaceExisting) {
         if (serviceConnection == null || !serviceConnection.isServiceBound()) {
             showMessage("Servis bağlantısı kurulamadı. Lütfen tekrar deneyin.", true);
             return;
@@ -283,6 +343,28 @@ public class BackupFragment extends BaseFragment {
      * Requests storage permissions and exports data to external storage
      */
     private void requestStoragePermissionAndExport() {
+        // First check notification permission
+        permissionManager.requestNotificationPermissions(new PermissionUtil.PermissionCallback() {
+            @Override
+            public void onPermissionsGranted() {
+                // Notification permission granted, now check storage permissions
+                requestStoragePermissionForExport();
+            }
+            
+            @Override
+            public void onPermissionsDenied(List<String> deniedPermissions) {
+                Log.w(TAG, "Notification permission denied");
+                showMessage("Bildirim izni verilmedi. İşlem devam edecek ancak bildirim gösterilmeyecek.", false);
+                // Continue with storage permission check
+                requestStoragePermissionForExport();
+            }
+        });
+    }
+    
+    /**
+     * Requests storage permissions for export operation
+     */
+    private void requestStoragePermissionForExport() {
         permissionManager.requestStoragePermissions(new PermissionUtil.PermissionCallback() {
             @Override
             public void onPermissionsGranted() {

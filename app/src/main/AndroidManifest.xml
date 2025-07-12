@@ -16,6 +16,9 @@
     
     <!-- Foreground Service Type for Data Sync (Android 10+ API 29+) -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    
+    <!-- Notification Permission (Android 13+ API 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:name=".WalletApplication"

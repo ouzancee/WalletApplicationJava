@@ -51,6 +51,11 @@ public class PermissionUtil {
                 Manifest.permission.READ_PHONE_STATE,
                 Manifest.permission.CALL_PHONE
         };
+        
+        // Notification permissions (Android 13+)
+        public static final String[] NOTIFICATION = {
+                Manifest.permission.POST_NOTIFICATIONS
+        };
     }
     
     /**
@@ -151,6 +156,19 @@ public class PermissionUtil {
          */
         public void requestLocationPermissions(PermissionCallback callback) {
             requestPermissions(Permissions.LOCATION, callback);
+        }
+        
+        /**
+         * Requests notification permissions (Android 13+)
+         * @param callback Callback to handle the result
+         */
+        public void requestNotificationPermissions(PermissionCallback callback) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                requestPermissions(Permissions.NOTIFICATION, callback);
+            } else {
+                // No notification permission needed for Android 12 and below
+                callback.onPermissionsGranted();
+            }
         }
         
         private String[] getPermissionsToRequest(String[] permissions) {
