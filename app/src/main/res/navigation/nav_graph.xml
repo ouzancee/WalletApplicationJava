@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.walletapplication.presentation.ui.fragment.DashboardFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_dashboard">
+        
+        <action
+            android:id="@+id/action_dashboard_to_addTransaction"
+            app:destination="@id/addTransactionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+            
+        <action
+            android:id="@+id/action_dashboard_to_transactionList"
+            app:destination="@id/transactionListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+            
+        <action
+            android:id="@+id/action_dashboard_to_reports"
+            app:destination="@id/reportsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+            
+        <action
+            android:id="@+id/action_dashboard_to_backup"
+            app:destination="@id/backupFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+            
+        <action
+            android:id="@+id/action_dashboard_to_categories"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/backupFragment"
+        android:name="com.example.walletapplication.presentation.ui.fragment.BackupFragment"
+        android:label="@string/backup_title"
+        tools:layout="@layout/fragment_backup" />
+
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.example.walletapplication.presentation.ui.fragment.AddTransactionFragment"
+        android:label="@string/add_transaction"
+        tools:layout="@layout/fragment_add_transaction" />
+
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.example.walletapplication.presentation.ui.fragment.TransactionListFragment"
+        android:label="@string/all_transactions"
+        tools:layout="@layout/fragment_transaction_list">
+        
+        <action
+            android:id="@+id/action_transactionList_to_addTransaction"
+            app:destination="@id/addTransactionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+            
+        <action
+            android:id="@+id/action_transactionList_to_reports"
+            app:destination="@id/reportsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.example.walletapplication.presentation.ui.fragment.ReportsFragment"
+        android:label="@string/nav_reports"
+        tools:layout="@layout/fragment_reports">
+
+        <action
+            android:id="@+id/action_reports_to_dashboard"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_reports_to_addTransaction"
+            app:destination="@id/addTransactionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_reports_to_transactionList"
+            app:destination="@id/transactionListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.walletapplication.presentation.ui.fragment.CategoryFragment"
+        android:label="@string/category_management"
+        tools:layout="@layout/fragment_category" />
+
+</navigation> 

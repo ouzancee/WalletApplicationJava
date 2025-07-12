@@ -1,0 +1,242 @@
+<resources>
+    <string name="app_name">Cüzdan Uygulaması</string>
+    
+    <!-- Main Screen -->
+    <string name="current_balance">Mevcut Bakiye</string>
+    <string name="monthly_income">Bu Ay Gelir</string>
+    <string name="monthly_expense">Bu Ay Gider</string>
+    <string name="recent_transactions">Son İşlemler</string>
+    <string name="no_transactions">Henüz işlem bulunmuyor</string>
+    <string name="quick_actions">Hızlı Eylemler</string>
+    
+    <!-- Transaction Types -->
+    <string name="expense">Gider</string>
+    <string name="income">Gelir</string>
+    <string name="both">Her İkisi</string>
+    
+    <!-- Add Transaction -->
+    <string name="add_transaction">İşlem Ekle</string>
+    <string name="amount">Tutar</string>
+    <string name="description">Açıklama</string>
+    <string name="category">Kategori</string>
+    <string name="date">Tarih</string>
+    <string name="payment_method">Ödeme Yöntemi</string>
+    <string name="vendor">Satıcı</string>
+    <string name="source">Kaynak</string>
+    <string name="income_type">Gelir Türü</string>
+    <string name="save">Kaydet</string>
+    <string name="cancel">İptal</string>
+    
+    <!-- Categories -->
+    <string name="category_food">Yemek</string>
+    <string name="category_transport">Ulaşım</string>
+    <string name="category_utilities">Faturalar</string>
+    <string name="category_entertainment">Eğlence</string>
+    <string name="category_shopping">Alışveriş</string>
+    <string name="category_health">Sağlık</string>
+    <string name="category_education">Eğitim</string>
+    <string name="category_salary">Maaş</string>
+    <string name="category_business">İş</string>
+    <string name="category_investment">Yatırım</string>
+    <string name="category_other">Diğer</string>
+    
+    <!-- Messages -->
+    <string name="transaction_added">İşlem başarıyla eklendi</string>
+    <string name="transaction_updated">İşlem başarıyla güncellendi</string>
+    <string name="transaction_deleted">İşlem başarıyla silindi</string>
+    
+    <!-- Navigation -->
+    <string name="view_all">Tümünü Gör</string>
+    <string name="all_transactions">Tüm İşlemler</string>
+    <string name="transaction_type">İşlem Türü</string>
+    <string name="expense_details">Gider Detayları</string>
+    <string name="income_details">Gelir Detayları</string>
+    <string name="search_transactions">İşlem Ara</string>
+    <string name="filter_by_category">Kategoriye Göre Filtrele</string>
+    <string name="filter_by_type">Türe Göre Filtrele</string>
+    <string name="all">Tümü</string>
+    <string name="clear_filters">Filtreleri Temizle</string>
+    <string name="no_transactions_found">İşlem bulunamadı</string>
+    <string name="delete_transaction">İşlem Sil</string>
+    <string name="delete_transaction_confirmation">Bu işlemi silmek istediğinizden emin misiniz?</string>
+    <string name="delete">Sil</string>
+    <string name="error_loading_data">Veri yüklenirken hata oluştu</string>
+    <string name="error_saving_transaction">İşlem kaydedilirken hata oluştu</string>
+    <string name="error_invalid_amount">Geçersiz tutar</string>
+    <string name="error_required_field">Bu alan zorunludur</string>
+    
+    <!-- Navigation -->
+    <string name="nav_dashboard">Ana Sayfa</string>
+    <string name="nav_transactions">İşlemler</string>
+    <string name="nav_reports">Raporlar</string>
+    <string name="nav_settings">Ayarlar</string>
+    
+    <!-- Backup -->
+    <string name="backup_title">Veri Yedekleme</string>
+    
+    <!-- Category Management -->
+    <string name="category_management">Kategori Yönetimi</string>
+    <string name="category_type_filter">Kategori Türü</string>
+    <string name="default_categories">Varsayılan Kategoriler</string>
+    <string name="custom_categories">Özel Kategoriler</string>
+    <string name="add_category">Kategori Ekle</string>
+    <string name="edit_category">Kategori Düzenle</string>
+    <string name="delete_category">Kategori Sil</string>
+    <string name="default_category">Varsayılan</string>
+    <string name="no_default_categories">Varsayılan kategori bulunmuyor</string>
+    <string name="no_custom_categories">Henüz özel kategori eklenmemiş</string>
+    <string name="category_name">Kategori Adı</string>
+    <string name="category_display_name">Görünen Ad</string>
+    <string name="category_type">Kategori Türü</string>
+    <string name="category_color">Kategori Rengi</string>
+    <string name="category_icon">Kategori İkonu</string>
+    <string name="category_added">Kategori başarıyla eklendi</string>
+    <string name="category_updated">Kategori başarıyla güncellendi</string>
+    <string name="category_deleted">Kategori başarıyla silindi</string>
+    <string name="delete_category_confirmation">Bu kategoriyi silmek istediğinizden emin misiniz?</string>
+    <string name="default_categories_cannot_be_deleted">Varsayılan kategoriler silinemez</string>
+    
+    <!-- Common -->
+    <string name="loading">Yükleniyor...</string>
+    <string name="refresh">Yenile</string>
+    <string name="search">Ara</string>
+    <string name="filter">Filtrele</string>
+    <string name="today">Bugün</string>
+    <string name="yesterday">Dün</string>
+    <string name="this_week">Bu Hafta</string>
+    <string name="this_month">Bu Ay</string>
+    <string name="currency_symbol">₺</string>
+    
+    <!-- Reports -->
+    <string name="monthly">Aylık</string>
+    <string name="yearly">Yıllık</string>
+    <string name="net_balance">Net Bakiye</string>
+    <string name="income_expense_trend">Gelir-Gider Trendi</string>
+    <string name="category_breakdown">Kategori Dağılımı</string>
+    <string name="chart_will_be_displayed_here">Grafik burada gösterilecek</string>
+    <string name="no_category_data">Kategori verisi bulunamadı</string>
+    <string name="transactions">İşlemler</string>
+    
+    <!-- Error Handling -->
+    <string name="retry">Tekrar Dene</string>
+    <string name="error_network">Ağ bağlantısı hatası</string>
+    <string name="error_database">Veritabanı hatası</string>
+    <string name="error_validation">Girilen bilgiler hatalı</string>
+    <string name="error_unknown">Beklenmeyen bir hata oluştu</string>
+    <string name="error_timeout">İşlem zaman aşımına uğradı</string>
+    <string name="error_permission">Gerekli izinler bulunmuyor</string>
+    <string name="success_transaction_saved">İşlem başarıyla kaydedildi</string>
+    <string name="success_data_loaded">Veriler başarıyla yüklendi</string>
+    
+    <!-- Error Messages - ViewModels -->
+    <string name="error_failed_to_load_transactions">İşlemler yüklenirken hata oluştu</string>
+    <string name="error_failed_to_search_transactions">İşlem aranırken hata oluştu</string>
+    <string name="error_failed_to_filter_transactions">İşlemler filtrelenirken hata oluştu</string>
+    <string name="error_failed_to_delete_transaction">İşlem silinirken hata oluştu</string>
+    <string name="error_failed_to_load_categories">Kategoriler yüklenirken hata oluştu</string>
+    <string name="error_failed_to_add_category">Kategori eklenirken hata oluştu</string>
+    <string name="error_failed_to_update_category">Kategori güncellenirken hata oluştu</string>
+    <string name="error_failed_to_delete_category">Kategori silinirken hata oluştu</string>
+    <string name="error_failed_to_load_recent_transactions">Son işlemler yüklenirken hata oluştu</string>
+    <string name="error_monthly_report_loading">Aylık rapor yüklenirken hata oluştu</string>
+    <string name="error_yearly_report_loading">Yıllık rapor yüklenirken hata oluştu</string>
+    <string name="error_unexpected">Beklenmeyen hata</string>
+    
+    <!-- Validation Messages -->
+    <string name="error_invalid_amount_format">Geçersiz tutar formatı</string>
+    <string name="error_amount_required">Tutar gereklidir</string>
+    <string name="error_description_required">Açıklama gereklidir</string>
+    <string name="error_category_required">Kategori gereklidir</string>
+    <string name="error_date_required">Tarih gereklidir</string>
+    <string name="error_category_name_required">Kategori adı gereklidir</string>
+    <string name="error_category_display_name_required">Kategori görünen adı gereklidir</string>
+    <string name="error_category_type_required">Kategori türü gereklidir</string>
+    
+    <!-- UI Labels -->
+    <string name="transaction_type_label">İşlem Türü</string>
+    <string name="basic_information">Temel Bilgiler</string>
+    <string name="expense_details_label">Gider Detayları</string>
+    <string name="income_details_label">Gelir Detayları</string>
+    <string name="transaction_clicked">İşlem tıklandı</string>
+    <string name="balance_card_clicked">Bakiye kartı tıklandı</string>
+    <string name="reset_type_filter_all">Tümü</string>
+    
+    <!-- Technical/Debug -->
+    <string name="tag_base_fragment">BaseFragment</string>
+    <string name="database_name">wallet_database</string>
+    <string name="default_category_icon">ic_category</string>
+    
+    <!-- Date Formats -->
+    <string name="date_format_pattern">dd/MM/yyyy</string>
+    <string name="month_year_format_pattern">MMMM yyyy</string>
+    
+    <!-- Use Case Validation -->
+    <string name="error_yearmonth_empty">Yıl-ay bilgisi boş olamaz</string>
+    <string name="error_category_id_null">Kategori ID boş olamaz</string>
+    <string name="error_category_not_found">Kategori bulunamadı</string>
+    <string name="error_default_categories_cannot_be_deleted">Varsayılan kategoriler silinemez</string>
+    
+    <!-- Plurals -->
+    <plurals name="transaction_count">
+        <item quantity="zero">Hiç işlem yok</item>
+        <item quantity="one">%d işlem</item>
+        <item quantity="other">%d işlem</item>
+    </plurals>
+    
+    <plurals name="category_count">
+        <item quantity="zero">Hiç kategori yok</item>
+        <item quantity="one">%d kategori</item>
+        <item quantity="other">%d kategori</item>
+    </plurals>
+    
+    <plurals name="days_ago">
+        <item quantity="zero">Bugün</item>
+        <item quantity="one">%d gün önce</item>
+        <item quantity="other">%d gün önce</item>
+    </plurals>
+    
+    <plurals name="months_ago">
+        <item quantity="zero">Bu ay</item>
+        <item quantity="one">%d ay önce</item>
+        <item quantity="other">%d ay önce</item>
+    </plurals>
+    
+    <!-- Backup and Restore -->
+    <string name="backup_export">Veri Yedekleme</string>
+    <string name="backup_import">Veri Geri Yükleme</string>
+    <string name="backup_export_success">Veriler başarıyla yedeklendi</string>
+    <string name="backup_import_success">Veriler başarıyla geri yüklendi</string>
+    <string name="backup_export_failed">Veri yedekleme başarısız</string>
+    <string name="backup_import_failed">Veri geri yükleme başarısız</string>
+    <string name="backup_file_saved">Yedek dosyası kaydedildi</string>
+    <string name="backup_file_loaded">Yedek dosyası yüklendi</string>
+    <string name="backup_select_file">Yedek dosyası seçin</string>
+    <string name="backup_replace_existing">Mevcut verileri değiştir</string>
+    <string name="backup_merge_data">Verileri birleştir</string>
+    
+    <!-- Backup Error Messages -->
+    <string name="error_backup_data_null">Yedek verisi boş</string>
+    <string name="error_backup_version_invalid">Geçersiz yedek versiyonu</string>
+    <string name="error_backup_data_incomplete">Yedek verisi eksik</string>
+    <string name="error_backup_version_incompatible">Uyumsuz yedek versiyonu</string>
+    <string name="error_backup_file_not_found">Yedek dosyası bulunamadı</string>
+    <string name="error_backup_file_read">Yedek dosyası okunamadı</string>
+    <string name="error_backup_file_write">Yedek dosyası yazılamadı</string>
+    <string name="error_backup_permission_denied">Dosya erişim izni reddedildi</string>
+    <string name="error_backup_storage_full">Depolama alanı dolu</string>
+    <string name="error_backup_invalid_format">Geçersiz yedek dosyası formatı</string>
+    
+    <!-- Advanced Search -->
+    <string name="advanced_search">Gelişmiş Arama</string>
+    <string name="amount_range">Tutar Aralığı</string>
+    <string name="date_range">Tarih Aralığı</string>
+    <string name="min_amount">Min Tutar</string>
+    <string name="max_amount">Max Tutar</string>
+    <string name="start_date">Başlangıç Tarihi</string>
+    <string name="end_date">Bitiş Tarihi</string>
+    <string name="apply_search">Aramayı Uygula</string>
+    <string name="search_results">Arama Sonuçları</string>
+    <string name="no_search_results">Arama kriterlerinize uygun sonuç bulunamadı</string>
+    <string name="search_criteria_cleared">Arama kriterleri temizlendi</string>
+    <string name="advanced_search_applied">Gelişmiş arama uygulandı</string>
+</resources>
